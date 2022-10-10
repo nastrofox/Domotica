@@ -71,5 +71,20 @@ namespace classetelecomando
         {
             tel.diminuiscicanale();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{tel.getVolume()}");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{tel.getCanale()}");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{tel.getStato()}");
+        }
     }
 }
