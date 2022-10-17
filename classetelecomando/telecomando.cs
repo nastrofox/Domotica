@@ -46,7 +46,14 @@ namespace classetelecomando
         }
         public void diminuiscicanale()
         {
-            canale -= 1;
+            if(canale == 0)
+            {
+                canale = 0;
+            }
+            else
+            {
+                canale -= 1;
+            }
         }
         public bool getStato()
         {
