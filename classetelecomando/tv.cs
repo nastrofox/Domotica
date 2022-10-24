@@ -16,6 +16,21 @@ namespace classetelecomando
             private bool stato;
             private int canale;
 
+            public float _prezzo;
+            public float Prezzo
+            {
+                get
+                {
+                    return _prezzo;
+                }
+                set
+                {
+                    if (value > 0)
+                    {
+                        _prezzo = value;
+                    }
+                }
+            }
             //costruttore
 
             public TV()
